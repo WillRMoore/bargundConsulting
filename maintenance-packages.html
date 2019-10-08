@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description"
+        content="Our web maintenance package is an optional service where we monitor ongoing performance in the long-term to prevent issues from occurring. This service also includes making small changes to your website and getting free consultations to help you determine the best ways to utilize our services. We offer different packages so you can get the best value for your budget. Checkout our maintenance packages to get more information and pricing.">
+
+    <title>Website Maintenance Services - Maven Consulting</title>
+
+    <!-- css imports -->
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/uikit.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/style.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- js imports -->
+    <script src='js/uikit.min.js'></script>
+    <script src='js/uikit-icons.min.js'></script>
+    <script src="js/respond.js/respond.js"></script>
+    <script src="js/lazysizes.js" async=""></script>
+    <script src='js/main.js'></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140408295-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-140408295-1');
+    </script>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <header class="navbar-section">
+        <!-- <h1>Logo</h1>
+    <h1>Maven Consulting</h1> -->
+        <div>
+            <a href="index.html">
+                <img class="lazyload" data-src="images/Maven Consulting Logo6.png" src="images/image placeholder.jpg"
+                    width="250px" height="250px" alt="Maven Consulting Logo" />
+            </a>
+        </div>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <!-- If Javascript is Disabled -->
+    <noscript>
+        <div class="javascript-disabled">
+            <p>This website requires javascript to function properly.</p>
+        </div>
+    </noscript>
+
+    <!-- Off-canvas Navbar -->
+    <div class="hamburger-menu-button">
+        <i onclick="toggleMenu()" class="fa fa-bars hamburger-menu-button"></i>
+    </div>
+
+    <div onclick="closeMenu()" class="slide-menu-overlay hide-overlay"></div>
+
+    <aside class="slide-menu-container close-menu">
+        <i onclick="closeMenu()" class="fa fa-times close-menu2"></i>
+        <!-- <div class="close-menu2"></div> -->
+
+        <nav class="slide-menu">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </aside>
+
+    <!-- Maintenance Packages Main Section -->
+    <main class="maintenance-package-section">
+        <img class="lazyload" data-src="images/maintenance icon2.png" src="images/image placeholder.jpg"
+            alt="Maven Consulting Website Maintenance Services" width="166px" height="166px">
+        <h1 style="text-align: center;">Maintenance Packages</h1>
+        <p style="text-align: center;">
+            Choose a website maintenace package that best fits your needs.
+        </p>
+        <div class="maintenance-services-body">
+            <img src="images/grunge-divider-top-white2.png" alt="Maven Consulting Grunge Top" />
+            <div class="maintenance-package">
+                <h1>Starter</h1>
+                <h2>$47/month</h2>
+                <p>30 minutes of updates per month</p>
+                <p>5-7 business day turnaround</p>
+                <p>Free website analytics</p>
+                <p>Free service consultations</p>
+                <button uk-toggle="target: #maintenance-modal" onclick="setPackage('starter')">Get Package</button>
+            </div>
+
+            <div class="maintenance-package-standard-wrapper">
+                <span class="standard-maintenance-package">
+                    Most Popular
+                </span>
+                <div class="standard-package-content">
+                    <h1>Standard</h1>
+                    <h2>$97/month</h2>
+                    <p>1 hour of updates per month</p>
+                    <p>3-5 business day turnaround</p>
+                    <p>Free website analytics</p>
+                    <p>Free service consultations</p>
+                    <button class="standard-package-button" uk-toggle="target: #maintenance-modal"
+                        onclick="setPackage('standard')">Get Package</button>
+                </div>
+
+            </div>
+
+            <div class="maintenance-package">
+                <h1>Plus</h1>
+                <h2>$197/month</h2>
+                <p>2 hours of updates per month</p>
+                <p>3 business day turnaround</p>
+                <p>Free website analytics</p>
+                <p>Free service consultations</p>
+                <button uk-toggle="target: #maintenance-modal" onclick="setPackage('plus')">Get Package</button>
+            </div>
+            <div class="maintenance-package">
+                <h1>Enterprise</h1>
+                <h2>$397/month</h2>
+                <p>4 hours of updates per month</p>
+                <p>3 business day turnaround</p>
+                <p>Free website analytics</p>
+                <p>Free service consultations</p>
+                <button uk-toggle="target: #maintenance-modal" onclick="setPackage('enterprise')">Get Package</button>
+            </div>
+            <img src="images/grunge-divider-bottom-white4.png" alt="Maven Consulting Grunge Bottom" />
+        </div>
+
+        <div class="further-maintenance-details">
+            <h1>Further Details</h1>
+            <ul uk-accordion="collapsible: false">
+                <li>
+                    <a href="#" class="uk-accordion-title">Amount of updates per month?</a>
+                    <div class="uk-accordion-content">
+                        <p>
+                            Labor is billed in 15 minute increments. Update
+                            requests may be rolled over one month, if not fully used.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="uk-accordion-title">Business day turnaround?</a>
+                    <div class="uk-accordion-content">
+                        <p>
+                            Each update request will be completed within the amount of business days specified in your
+                            maintenance package. We also offer a one
+                            business day expedited service at $20 per request.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="uk-accordion-title">Free website analytics?</a>
+                    <div class="uk-accordion-content">
+                        <p>
+                            We will install website analytics so you can measure the progress of your website.
+                            Understanding your web traffic is critical to successful marketing.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="uk-accordion-title">Free service consultations?</a>
+                    <div class="uk-accordion-content">
+                        <p>
+                            We can help you determine the best ways to utilize our services. If you have update requests
+                            that are not going to be used, we can suggest areas of your site that have room for
+                            improvement.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- discovery session sticky message -->
+    <!-- add .make-sticky class to fix the message to the bottom of screen -->
+    <!-- <div class="discovery-sticky make-sticky-large">
+        <p>Get free 30 minute discovery session.</p>
+        <button class="discovery-sticky-button pulse-coral" uk-toggle="target: #discovery-modal">Schedule Discovery
+            Session</button>
+        <span class="sticky-discovery-close" uk-icon="icon: close" onclick="closeStickyDiscovery()"></span>
+    </div> -->
+
+    <!-- Discovery Session Modal -->
+    <div id="discovery-modal" uk-modal>
+        <form class="discovery-section-modal-form uk-modal-dialog uk-modal-body" method="POST"
+            action="https://formspree.io/mavenconsultingincorporated@gmail.com">
+            <div style="width: 9rem; height: 9rem; align-self: center;">
+                <img data-src="images/services-icon2.png" alt="Maven Consulting services page." width="100%"
+                    height="100%" uk-img>
+            </div>
+            <h1 class="uk-modal-title discovery-align-center">Discovery Session</h1>
+            <p class="free-30min-session discovery-align-center">Get a free 30 minute discovery session.</p>
+            <div class="flex">
+                <div class="discovery-input-label-section">
+                    <span class="discovery-input-label">Your Name</span>
+                    <input class="discovery-input-name discovery-form-name" name="Name" type="text" />
+                </div>
+                <div class="discovery-input-label-section">
+                    <span class="discovery-input-label">Your Business's Name</span>
+                    <input class="discovery-input-name discovery-form-business-name" name="Business Name" type="text" />
+                </div>
+            </div>
+            <div class="discovery-input-section2">
+                <div class="discovery-input-label-section">
+                    <span class="discovery-input-label">Your Email</span>
+                    <input class="discovery-input discovery-form-email" name="Email" type="email" />
+                </div>
+                <div class="discovery-input-label-section">
+                    <span class="discovery-input-label">What Brought You Here?</span>
+                    <textarea class="discovery-textarea-input discovery-form-what-brought-you"
+                        name="What Brought You Here" cols="30" rows="10"></textarea>
+                </div>
+                <div class="discovery-input-label-section">
+                    <span class="discovery-input-label">What Are Your Top Priorities?</span>
+                    <textarea class="discovery-textarea-input discovery-form-top-priorities" name="Top Priorities"
+                        cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <p class="discovery-error discovery-hide-error">
+                Error! All fields must be completed.
+            </p>
+            <div class="discovery-session-button pulse-coral" onclick="submitDiscoveryForm()">
+                <p class="discovery-modal-button-text">Schedule <span
+                        class="discovery-form-button-discovery">Discovery</span> Session</p>
+            </div>
+            <!-- <button class="discovery-session-button" onclick="submitDiscoveryForm()">Schedule Discovery Session</button> -->
+            <p class="discovery-align-center">Places are strictly limited so please provide as much detail as possible!
+            </p>
+            <input class="discovery-real-button" type="submit" value="real discovery submit button">
+            <span class="uk-modal-close discovery-modal-close" uk-icon="icon: close"></span>
+        </form>
+    </div>
+
+    <!-- Maintence Package Modal -->
+    <div id="maintenance-modal" uk-modal>
+        <form class="discovery-section-modal-form uk-modal-dialog uk-modal-body" method="POST"
+            action="https://formspree.io/mavenconsultingincorporated@gmail.com">
+            <div style="width: 9rem; height: 9rem; align-self: center;">
+                <img data-src="images/maintenance icon.png" alt="Maven Consulting services page." width="100%"
+                    height="100%" uk-img>
+            </div>
+            <h1 class="uk-modal-title discovery-align-center">Maintenance Package</h1>
+            <!-- <p class="free-30min-session discovery-align-center">Get a free 30 minute discovery session.</p> -->
+            <div class="discovery-input-label-section">
+                <span class="discovery-input-label">Package Plan</span>
+                <select name="Package Plan" id="package-plan">
+                    <option value="starter">Starter</option>
+                    <option value="standard">Standard</option>
+                    <option value="plus">Plus</option>
+                    <option value="enterprise">Enterprise</option>
+                </select>
+            </div>
+            <div class="flex">
+                <div class="discovery-input-label-section">
+                    <span class="discovery-input-label">Your Name</span>
+                    <input class="discovery-input-name maintenance-form-name" name="Name" type="text" />
+                </div>
+                <div class="discovery-input-label-section">
+                    <span class="discovery-input-label">Your Business's Name</span>
+                    <input class="discovery-input-name maintenance-form-business-name" name="Business Name"
+                        type="text" />
+                </div>
+            </div>
+            <div class="discovery-input-section2">
+                <div class="discovery-input-label-section">
+                    <span class="discovery-input-label">Your Email</span>
+                    <input class="discovery-input maintenance-form-email" name="Email" type="email" />
+                </div>
+                <div class="discovery-input-label-section">
+                    <span class="discovery-input-label">Questions or Comments?</span>
+                    <textarea class="discovery-textarea-input maintenance-form-questions" name="Questions or Comments?"
+                        cols="30" rows="10"></textarea>
+                </div>
+                <!-- <div class="discovery-input-label-section">
+                    <span class="discovery-input-label">What Are Your Top Priorities?</span>
+                    <textarea class="discovery-textarea-input discovery-form-top-priorities" name="Top Priorities"
+                        cols="30" rows="10"></textarea>
+                </div> -->
+            </div>
+            <p class="maintenance-error discovery-hide-error">
+                Error! All fields must be completed.
+            </p>
+            <div class="discovery-session-button pulse-coral" onclick="submitMaintenanceForm()">
+                <p>Get
+                    <span class="maintenance-form-button-maintenance">Maintenance</span> Package</p>
+            </div>
+            <!-- <button class="discovery-session-button" onclick="submitDiscoveryForm()">Schedule Discovery Session</button> -->
+            <!-- <p class="discovery-align-center">Places are strictly limited so please provide as much detail as possible! -->
+            </p>
+            <input id="maintenance-real-button" class="discovery-real-button" type="submit"
+                value="real maintenance submit button">
+            <span class="uk-modal-close discovery-modal-close" uk-icon="icon: close"></span>
+        </form>
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer class="footer normal-footer-padding">
+        <img src="images/grunge-divider-top-white2.png" alt="Maven Consulting Grunge Top" />
+        <div class="footer-column-container">
+            <div class="footer-column">
+                <h2>Resources</h2>
+                <!-- <a href="contact.html">Blog</a> -->
+                <a href="about.html">The 8 Maven Values</a>
+                <a href="maintenance-packages.html">Website Maintenance Packages</a>
+                <a href="services.html">Our Services</a>
+                <a href="portfolio.html">Our Work</a>
+                <a href="contact.html">Contact Us</a>
+                <!-- <a href="contact.html">Case Studies</a> -->
+            </div>
+
+            <div class="footer-column">
+                <h2>Legal</h2>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="cookie-policy.html">Cookie Policy</a>
+                <a href="opt-out.html">Opt Out</a>
+            </div>
+
+            <div class="footer-column">
+                <h2>Social</h2>
+                <div class="social-media-link-section">
+                    <a href="https://fb.me/MavenConsultingLLC" class="social-media-icon"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.pinterest.com/MavenConsultingLLC/" class="social-media-icon"><i
+                            class="fab fa-pinterest"></i></a>
+                    <a href="https://www.instagram.com/mavenconsultingllc/" class="social-media-icon"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <p class="copywright privacy-footer-link">&copy; Maven Consulting LLC, 2019</p>
+    </footer>
+
+
+    <!-- Mouseflow -->
+    <script type="text/javascript">
+        window._mfq = window._mfq || [];
+        (function () {
+            var mf = document.createElement("script");
+            mf.type = "text/javascript"; mf.async = true;
+            mf.src = "//cdn.mouseflow.com/projects/b68cf005-cb50-4228-9df5-f899635d9a44.js";
+            document.getElementsByTagName("head")[0].appendChild(mf);
+        })();
+    </script>
+</body>
+
+</html>
