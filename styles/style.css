@@ -9,9 +9,7 @@
 */
 html {
   box-sizing: border-box;
-  /* 1 */
-  font-family: sans-serif, Arial, "Helvetica Neue", Helvetica;
-  /* 2 */ }
+  /* 1 */ }
 
 *,
 *::before,
@@ -365,6 +363,14 @@ template {
   font-family: Westcraft;
   font-display: auto;
   src: url(../fonts/WestcraftSans-Soft.otf); }
+@font-face {
+  font-family: Norse;
+  font-display: auto;
+  src: url(../fonts/Norse_0.otf); }
+@font-face {
+  font-family: "Norse Bold";
+  font-display: auto;
+  src: url(../fonts/Norsebold.otf); }
 a {
   text-decoration: none;
   color: inherit; }
@@ -451,8 +457,9 @@ select {
   align-items: center;
   flex-wrap: wrap; }
   .footer img {
-    margin-bottom: 3rem;
     width: 100%; }
+  .footer .logo {
+    width: 400px; }
   .footer a {
     color: #3D3D3D; }
     .footer a:hover {
@@ -550,6 +557,8 @@ select {
         border-radius: 50%;
         height: 3rem;
         width: 3rem; }
+        .footer .social-media-link-section .social-media-icon i:hover {
+          border: solid 1px #32bdb6; }
 
 .normal-footer-padding {
   padding-bottom: 3rem; }
@@ -796,10 +805,10 @@ select {
     height: 9rem; }
   .portfolio-sample-section-wrapper .portfolio-sample-section-button {
     background-color: #3D3D3D;
-    border-radius: 30px;
-    height: 2.5em;
-    width: 10em;
+    height: 3em;
+    width: 12em;
     font-size: 1em;
+    font-weight: 500;
     border: none;
     margin-top: 6rem;
     display: flex;
@@ -837,7 +846,6 @@ select {
         width: 400px;
         margin-left: 1em;
         margin-top: 3em;
-        cursor: pointer;
         display: flex;
         justify-content: center; }
         .portfolio-sample-section-wrapper .portfolio-gif-section-wrapper .portfolio-sample-section .portfolio-sample-item .portfolio-item-child {
@@ -931,7 +939,7 @@ select {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    background-color: coral;
+    background-color: #32bdb6;
     color: #fff;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -939,9 +947,9 @@ select {
     padding-right: 4rem;
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
-    border-radius: 30px;
     cursor: pointer;
-    text-align: center; }
+    text-align: center;
+    text-transform: uppercase; }
   .discovery-section-modal-form .discovery-align-center {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
@@ -1025,13 +1033,17 @@ select {
     background-color: rgba(100, 100, 100, 0.1);
     padding-top: 5em;
     padding-bottom: 6em;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin-top: 10em;
     width: 80%;
     border-radius: 30px;
     text-align: center; }
     .discovery-section-wrapper .discovery-section .free-30min-session {
       margin-top: -0.5em;
-      margin-bottom: 2em; }
+      margin-bottom: 2em;
+      margin-left: calc(5% + 60px);
+      margin-right: calc(5% + 60px); }
     .discovery-section-wrapper .discovery-section .discovery-error {
       background-color: #CE5667;
       padding-top: 0.5em;
@@ -1063,15 +1075,15 @@ select {
       justify-content: center;
       width: 25em;
       height: 3em;
-      border-radius: 30px;
       font-size: 1.2em;
       font-weight: 700;
       cursor: pointer;
       color: #fff;
       border: none;
-      background-color: coral;
+      background-color: #32bdb6;
       margin-top: 2em;
-      margin-bottom: 0.2em; }
+      margin-bottom: 0.2em;
+      text-transform: uppercase; }
     .discovery-section-wrapper .discovery-section .discovery-session-button:hover {
       opacity: 0.9; }
     .discovery-section-wrapper .discovery-section .discovery-input {
@@ -1101,6 +1113,8 @@ select {
     .discovery-section-wrapper .discovery-section .discovery-input-label {
       align-self: flex-start;
       color: #3D3D3D; }
+    .discovery-section-wrapper .discovery-section .form-section {
+      margin-top: 2rem; }
     .discovery-section-wrapper .discovery-section .flex {
       display: flex;
       justify-content: center;
@@ -1209,11 +1223,11 @@ select {
         align-items: center;
         justify-content: center;
         text-align: center;
-        height: 2.5em;
-        width: 10rem;
-        border-radius: 30px;
+        height: 3em;
+        width: 12rem;
         cursor: pointer;
-        margin-top: 2em; }
+        margin-top: 2em;
+        font-weight: 500; }
       .jumbotron .jumbotron-items-div .jumbotron-item a:hover {
         text-decoration: none;
         opacity: 0.8; }
@@ -1222,16 +1236,26 @@ select {
         text-decoration: none; }
       .jumbotron .jumbotron-items-div .jumbotron-item .jumbotron-item-img {
         width: 150px;
-        height: 150px; }
+        height: 150px;
+        margin-bottom: 1.5rem; }
 
 .navbar-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap; }
-  .navbar-section img {
-    margin-top: 1rem; }
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 1rem;
+  padding-right: 4rem; }
+  .navbar-section .logo {
+    width: 400px; }
   .navbar-section .navbar {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -1243,9 +1267,8 @@ select {
     flex-wrap: wrap; }
     .navbar-section .navbar a {
       color: #666;
-      margin-left: 4.5rem;
+      margin-left: 3.5rem;
       font-weight: 500;
-      font-family: Westcraft, sans-serif, Arial, "Helvetica Neue", Helvetica;
       font-size: 120%; }
       .navbar-section .navbar a:first-of-type {
         margin-left: 0; }
@@ -1803,6 +1826,9 @@ select {
     -ms-grid-row-align: center;
     align-self: center; }
 
+.norse-heading {
+  font-family: "Norse Bold"; }
+
 @media all and (max-width: 3000px) and (min-width: 1500px) {
   .portfolio-sample-section-wrapper .portfolio-gif-section-wrapper {
     background-color: #fff; }
@@ -1827,8 +1853,7 @@ select {
     width: 90%; } }
 @media all and (max-width: 950px) and (min-width: 750px) {
   .discovery-section-wrapper .discovery-section {
-    width: 95%;
-    padding-top: 0; }
+    width: 95%; }
 
   .contact-us-section .contact-us-body {
     width: 100%; } }
@@ -1847,6 +1872,10 @@ select {
       width: 100%; }
     .services-section .services-item p {
       width: 100%; }
+
+  .discovery-section-wrapper .discovery-section .free-30min-session {
+    margin-left: calc(3 * 1rem);
+    margin-right: calc(3 * 1rem); }
 
   .discovery-section-wrapper .discovery-section {
     width: 90%; }

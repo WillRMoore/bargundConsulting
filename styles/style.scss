@@ -8,6 +8,18 @@
   src: url(../fonts/WestcraftSans-Soft.otf);
 }
 
+@font-face {
+  font-family: Norse;
+  font-display: auto;
+  src: url(../fonts/Norse_0.otf);
+}
+
+@font-face {
+  font-family: "Norse Bold";
+  font-display: auto;
+  src: url(../fonts/Norsebold.otf);
+}
+
 
 a {
   text-decoration: none;
@@ -131,8 +143,12 @@ select {
   flex-wrap: wrap;
 
   img {
-    margin-bottom: 3rem;
+    // margin-bottom: 3rem;
     width: 100%;
+  }
+
+  .logo {
+    width: 400px;
   }
 
   a {
@@ -252,6 +268,8 @@ select {
     .social-media-icon {
       margin-left: 1rem;
 
+
+
       &:first-of-type {
         // color: $lollipop-blue;
         margin-left: 0;
@@ -277,6 +295,10 @@ select {
         border-radius: 50%;
         height: 3rem;
         width: 3rem;
+
+        &:hover {
+          border: solid 1px $lollipop-blue;
+        }
       }
     }
   }
@@ -689,10 +711,10 @@ width: 90%;
 
   .portfolio-sample-section-button {
     background-color: $smokey-black;
-    border-radius: 30px;
-    height: 2.5em;
-    width: 10em;
+    height: 3em;
+    width: 12em;
     font-size: 1em;
+    font-weight: 500;
     border: none;
     margin-top: 6rem;
     display: flex;
@@ -743,7 +765,7 @@ width: 90%;
         // height: 400px;
         margin-left: 1em;
         margin-top: 3em;
-        cursor: pointer;
+        // cursor: pointer;
         display: flex;
         justify-content: center;
 
@@ -873,7 +895,7 @@ justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
 
-   background-color: coral;
+   background-color: $lollipop-blue;
    color: #fff;
    padding-top: 1rem;
    padding-bottom: 1rem;
@@ -881,9 +903,9 @@ justify-content: center;
    padding-right: 4rem;
    margin-top: 1.5rem;
    margin-bottom: 0.5rem;
-   border-radius: 30px;
    cursor: pointer;
    text-align: center;
+   text-transform: uppercase;
 
    .maintenance-form-button-maintenance {
     //  color: $lollipop-blue;
@@ -996,6 +1018,8 @@ justify-content: center;
         background-color: $gray-100;
         padding-top: 5em;
         padding-bottom: 6em;
+        padding-left: 1rem;
+        padding-right: 1rem;
         margin-top: 10em;
         width: 80%;
         border-radius: 30px;
@@ -1004,6 +1028,8 @@ justify-content: center;
         .free-30min-session {
             margin-top: -0.5em;
             margin-bottom: 2em;
+            margin-left: calc(5% + 60px);
+            margin-right: calc(5% + 60px);
         }
 
         .discovery-error {
@@ -1044,15 +1070,15 @@ justify-content: center;
 
             width: 25em;
             height: 3em;
-            border-radius: 30px;
             font-size: 1.2em;
             font-weight: 700;
             cursor: pointer;
             color: #fff;
             border: none;
-            background-color: coral;
+            background-color: $lollipop-blue;
             margin-top: 2em;
             margin-bottom: 0.2em;
+            text-transform: uppercase;
         }
 
         .discovery-session-button:hover {
@@ -1094,6 +1120,10 @@ justify-content: center;
         .discovery-input-label {
             align-self: flex-start;
             color: #3D3D3D;
+        }
+
+        .form-section {
+          margin-top: 2rem;
         }
 
         .flex {
@@ -1244,7 +1274,7 @@ justify-content: center;
           }
 
           a {
-            color: #fff;
+              color: #fff;
               background-color: $lollipop-blue;
               border: none;
               display: flex;
@@ -1253,13 +1283,11 @@ justify-content: center;
               justify-content: center;
               text-align: center;
               // font-size: 1em;
-              height: 2.5em;
-              width: 10rem;
-              // padding-top: 0.5rem;
-              // padding-bottom: 0.5rem;
-              border-radius: 30px;
+              height: 3em;
+              width: 12rem;
               cursor: pointer;
               margin-top: 2em;
+              font-weight: 500;
           }
 
           a:hover {
@@ -1275,6 +1303,7 @@ justify-content: center;
           .jumbotron-item-img {
               width: 150px;
               height: 150px;
+              margin-bottom: 1.5rem;
           }
       }
   }
@@ -1284,14 +1313,24 @@ justify-content: center;
 
 // navbar
 .navbar-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
-  img {
-    margin-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 4rem;
+
+  .logo {
+    width: 400px;
   }
 
   .navbar {
@@ -1308,9 +1347,9 @@ justify-content: center;
 
     a {
       color: $dark-gray;
-      margin-left: 4.5rem;
+      margin-left: 3.5rem;
       font-weight: 500;
-      font-family: Westcraft, sans-serif, Arial, "Helvetica Neue", Helvetica;
+      // font-family: Westcraft, sans-serif, Arial, "Helvetica Neue", Helvetica;
       font-size: 120%;
 
       &:first-of-type {
@@ -2193,6 +2232,12 @@ justify-content: center;
 
 
 
+.norse-heading {
+  font-family: "Norse Bold";
+}
+
+
+
 
 
 
@@ -2252,7 +2297,7 @@ justify-content: center;
     .discovery-section-wrapper  {
       .discovery-section {
         width: 95%;
-        padding-top: 0;
+        // padding-top: 0;
         // background-color: coral;
       }
     }
@@ -2306,6 +2351,15 @@ justify-content: center;
     .services-item {
       p {
         width: 100%;
+      }
+    }
+  }
+
+  .discovery-section-wrapper {
+    .discovery-section {
+      .free-30min-session {
+        margin-left: calc(3 * 1rem);
+        margin-right: calc(3 * 1rem);
       }
     }
   }

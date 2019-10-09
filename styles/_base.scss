@@ -10,14 +10,14 @@
 */
 
 html {
-    box-sizing: border-box; /* 1 */
-    font-family: sans-serif, Arial, "Helvetica Neue", Helvetica; /* 2 */
+  box-sizing: border-box; /* 1 */
+  // font-family: sans-serif, Arial, "Helvetica Neue", Helvetica;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 /**
@@ -36,13 +36,13 @@ h5,
 h6,
 p,
 pre {
-    margin: 0;
+  margin: 0;
 }
 
 button {
-    background: transparent;
-    border: 0;
-    padding: 0;
+  background: transparent;
+  border: 0;
+  padding: 0;
 }
 
 /**
@@ -51,18 +51,18 @@ button {
 */
 
 button:focus {
-    outline: 1px dotted;
-    outline: 5px auto -webkit-focus-ring-color;
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 iframe {
-    border: 0;
+  border: 0;
 }
 
 //ol,
