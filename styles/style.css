@@ -1827,7 +1827,7 @@ select {
     align-self: center; }
 
 .norse-heading {
-  font-family: "Norse Bold"; }
+  font-family: "Norse Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
 @media all and (max-width: 3000px) and (min-width: 1500px) {
   .portfolio-sample-section-wrapper .portfolio-gif-section-wrapper {
