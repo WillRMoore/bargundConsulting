@@ -1,388 +1,278 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web Design/Development, Logo Design, and Digital Marketing. We believe that a company
+  and website are more than a completed checklist. That's why Bargund Consulting focuses on building an identity
+  and soul for your business. Checkout our portfolio."
+    />
 
-<head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <meta name="description" content="Web Design/Development, Logo Design, and Digital Marketing. We believe that a company
-  and website are more than a completed checklist. That's why Maven Consulting focuses on building an identity
-  and soul for your business. Checkout our portfolio.">
+    <title>Our Work | Bargund Consulting</title>
 
-  <title>Our Work - Maven Consulting</title>
+    <!-- css imports -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="styles/uikit.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="styles/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
 
-  <!-- css imports -->
-  <link rel='stylesheet' type='text/css' media='screen' href='styles/uikit.css'>
-  <link rel='stylesheet' type='text/css' media='screen' href='styles/style.css'>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link rel="icon" type="image/png" href="images/Maven Consulting favicon.png">
+    <!-- js imports -->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/respond.js/respond.js"></script>
+    <script src="js/lazysizes.js" async=""></script>
+    <script src="js/main.js"></script>
 
-  <!-- js imports -->
-  <script src='js/uikit.min.js'></script>
-  <script src='js/uikit-icons.min.js'></script>
-  <script src="js/respond.js/respond.js"></script>
-  <script src="js/lazysizes.js" async=""></script>
-  <script src='js/main.js'></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-140408295-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140408295-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      gtag("config", "UA-140408295-1");
+    </script>
+  </head>
 
-    gtag('config', 'UA-140408295-1');
-  </script>
-</head>
+  <body>
+    <!-- Navbar Section -->
+    <header class="navbar-section">
+      <!-- <h1>Logo</h1>
+        <h1>Bargund Consulting</h1> -->
+      <div>
+        <a href="index.html">
+          <img
+            class="logo"
+            src="images/logo 3.png"
+            alt="Bargund Consulting Logo"
+          />
+        </a>
+      </div>
+      <nav class="navbar">
+        <a href="blog.html">Blog</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-<body>
-  <!-- Navbar Section -->
-  <header class="navbar-section">
-    <!-- <h1>Logo</h1>
-    <h1>Maven Consulting</h1> -->
-    <div>
-      <a href="index.html">
-        <img class="lazyload" data-src="images/Maven Consulting Logo distressed.png" src="images/image placeholder.jpg"
-          width="250px" height="250px" alt="Maven Consulting Logo" />
-      </a>
+    <!-- If Javascript is Disabled -->
+    <noscript>
+      <div class="javascript-disabled">
+        <p>This website requires javascript to function properly.</p>
+      </div>
+    </noscript>
+
+    <!-- Off-canvas Navbar -->
+    <div class="hamburger-menu-button">
+      <i onclick="toggleMenu()" class="fa fa-bars hamburger-menu-button"></i>
     </div>
-    <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="about.html">About</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
 
-  <!-- If Javascript is Disabled -->
-  <noscript>
-    <div class="javascript-disabled">
-      <p>This website requires javascript to function properly.</p>
-    </div>
-  </noscript>
+    <div onclick="closeMenu()" class="slide-menu-overlay hide-overlay"></div>
 
-  <!-- Off-canvas Navbar -->
-  <div class="hamburger-menu-button">
-    <i onclick="toggleMenu()" class="fa fa-bars hamburger-menu-button"></i>
-  </div>
+    <aside class="slide-menu-container close-menu">
+      <i onclick="closeMenu()" class="fa fa-times close-menu2"></i>
+      <!-- <div class="close-menu2"></div> -->
 
-  <div onclick="closeMenu()" class="slide-menu-overlay hide-overlay"></div>
+      <nav class="slide-menu">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </aside>
 
-  <aside class="slide-menu-container close-menu">
-    <i onclick="closeMenu()" class="fa fa-times close-menu2"></i>
-    <!-- <div class="close-menu2"></div> -->
-
-    <nav class="slide-menu">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="about.html">About</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </aside>
-
-
-  <!-- <section class="portfolio-section">
+    <!-- <section class="portfolio-section">
   </section> -->
 
-  <!--Portfolio Main Section -->
-  <section class="portfolio-main-section">
-    <img style="width: 100%;" src="images/grunge border alternative 100px.png" alt="Grunge Border">
-    <div class="portfolio-items-wrapper">
-      <div class="uk-child-width-1-2@m" uk-grid="masonry: true">
-        <div>
-          <img class="lazyload" data-src="images/portfolio item 2.jpg" src="images/image placeholder.jpg"
-            alt="Adventure Finder Website Design" width="350px" height="1000px">
-        </div>
-        <div>
-          <img class="lazyload" data-src="images/portfolio item 1.jpg" src="images/image placeholder.jpg"
-            alt="Adventure Finder Website Design" width="350px" height="1000px">
-        </div>
-        <div>
-          <img class="lazyload" data-src="images/portfolio item 3.jpg" src="images/image placeholder.jpg"
-            alt="Adventure Finder Website Design" width="350px" height="1000px">
-        </div>
-        <div>
-          <img class="lazyload" data-src="images/portfolio item 4.jpg" src="images/image placeholder.jpg"
-            alt="Adventure Finder Website Design" width="350px" height="1000px">
-        </div>
-      </div>
-    </div>
-    <img style="width: 100%;" src="images/grunge border bottom alternative 100px.png" alt="Grunge Border">
-  </section>
-
-
-
-
-  <section class="portfolio-section">
-    <!-- <img class="lazyload" data-src="images/our work icon.png" src="images/image placeholder.jpg"
-      alt="Maven Consulting Portfolio Page" width="166px" height="166px">
-    <h1>Our Work</h1>
-    <div class="portfolio-main-body">
-      <div uk-filter='target: .js-filter'>
-        <div class='uk-grid-small uk-grid-divider uk-child-width-auto' uk-grid>
+    <!--Portfolio Main Section -->
+    <section class="portfolio-main-section">
+      <img
+        style="width: 100%;"
+        src="images/grunge border alternative 100px.png"
+        alt="Grunge Border"
+      />
+      <div class="portfolio-items-wrapper">
+        <div class="uk-child-width-1-2@m" uk-grid="masonry: false">
           <div>
-            <ul class='uk-subnav uk-subnav-pill' uk-margin>
-              <li class='uk-active' uk-filter-control><a href='#'>All</a></li>
-            </ul>
+            <a href="images/nordikuh.jpg">
+              <img
+                class="lazyload"
+                data-src="images/nordikuh.jpg"
+                src="images/image placeholder.jpg"
+                alt="Adventure Finder Website Design"
+                width="350px"
+                height="1000px"
+              />
+            </a>
+            <h2 class="norse-heading">Nordikuh</h2>
+            <p>
+              This website was for a brand design company. Gabriella is the
+              owner. We created it custom with html, css, and javascript from a
+              psd design. Nordikuh is actually the company that created the logo
+              for Bargund Consulting. They have great designers.
+            </p>
+            <p style="color: #32bdb6;">
+              <a href="https://nordikuh.com/" target="_blank">nordikuh.com</a>
+            </p>
           </div>
           <div>
-            <ul class='uk-subnav uk-subnav-pill' uk-margin>
-              <li uk-filter-control='filter: [data-color*="white"]; group: data-color'><a href='#'>Restaurants</a></li>
-              <li uk-filter-control='filter: [data-color*="blue"]; group: data-color'><a href='#'>Landing Pages</a></li> -->
-    <!-- <li uk-filter-control='filter: [data-color*="blue"]; group: data-color'><a href='#'>Landing Pages</a></li>
-              <li uk-filter-control='filter: [data-color*="blue"]; group: data-color'><a href='#'>Landing Pages</a></li>
-              <li uk-filter-control='filter: [data-color*="blue"]; group: data-color'><a href='#'>Landing Pages</a></li>
-              <li uk-filter-control='filter: [data-color*="blue"]; group: data-color'><a href='#'>Landing Pages</a></li>
-              <li uk-filter-control='filter: [data-color*="blue"]; group: data-color'><a href='#'>Landing Pages</a></li>
-              <li uk-filter-control='filter: [data-color*="blue"]; group: data-color'><a href='#'>Landing Pages</a></li> -->
+            <a href="images/maidsuds.jpg">
+              <img
+                class="lazyload"
+                data-src="images/maidsuds.jpg"
+                src="images/image placeholder.jpg"
+                alt="Adventure Finder Website Design"
+                width="350px"
+                height="1000px"
+              />
+            </a>
+            <h2 class="norse-heading">Maidsuds</h2>
+            <p>
+              A house-cleaning website for a small business operating in jackson
+              county. Alisha is the owner. We created it custom with html, css,
+              and javascript using a psd design. We did not create the logo and
+              branding for Maidsuds because they were recomended to us from
+              Nordikuh—who did a spectacular job.
+            </p>
+            <p style="color: #32bdb6;">
+              <a href="https://maidsuds.com/" target="_blank">maidsuds.com</a>
+            </p>
+          </div>
+          <div>
+            <a href="images/beau ecommerce.jpg">
+              <img
+                class="lazyload"
+                data-src="images/beau ecommerce.jpg"
+                src="images/image placeholder.jpg"
+                alt="Adventure Finder Website Design"
+                width="350px"
+                height="1000px"
+              />
+            </a>
 
-    <!-- <li uk-filter-control='filter: [data-color*="black"]; group: data-color'><a href='#'></a></li>
-              <li uk-filter-control='filter: [data-color*="dark"]; group: data-color'><a href='#'>Dark Colors</a></li> -->
-    <!-- </ul>
+            <h2 class="norse-heading">Beau</h2>
+            <p>
+              An e-commerce shop we built using Wordpress Woocommerce.
+            </p>
+          </div>
+          <div>
+            <a href="images/insurance leverage screenshot.jpg">
+              <img
+                class="lazyload"
+                data-src="images/insurance leverage screenshot.jpg"
+                src="images/image placeholder.jpg"
+                alt="Adventure Finder Website Design"
+                width="350px"
+                height="1000px"
+              />
+            </a>
+            <h2 class="norse-heading">Insurance Leverage</h2>
+            <p>
+              A business website we built using Wordpress.
+            </p>
           </div>
         </div>
-        <ul class='js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center' uk-grid='masonry: true'>
-          <li data-color='white' data-size='large'>
-            <div class='uk-card uk-card-default uk-card-body'> -->
-    <!-- <canvas width='600' height='800'></canvas> -->
-    <!-- <img class="lazyload" data-src="images/bobs burgers mockup2.png" src="images/image placeholder.jpg"
-                width="600px" height="800px" alt="Maven Consulting Portfolio Item"> -->
-    <!-- <div class='uk-position-center'>Item</div> -->
-    <!-- </div>
-          </li>
-          <li data-color='blue dark' data-size='small'>
-            <div class='uk-card uk-card-default uk-card-body'> -->
-    <!-- <canvas width='600' height='400'></canvas> -->
-    <!-- <img class="lazyload" data-src="images/bobs burgers mockup2.png" src="images/image placeholder.jpg"
-                width="600px" height="800px" alt="Maven Consulting Portfolio Item"> -->
-    <!-- <div class='uk-position-center'>Item</div> -->
-    <!-- </div>
-          </li>
-          <li data-color='white' data-size='medium'>
-            <div class='uk-card uk-card-default uk-card-body'> -->
-    <!-- <canvas width='600' height='600'></canvas> -->
-    <!-- <img class="lazyload" data-src="images/bobs burgers mockup2.png" src="images/image placeholder.jpg"
-                width="600px" height="800px" alt="Maven Consulting Portfolio Item"> -->
-    <!-- <div class='uk-position-center'>Item</div> -->
-    <!-- </div>
-          </li>
-          <li data-color='white' data-size='small'>
-            <div class='uk-card uk-card-default uk-card-body'> -->
-    <!-- <canvas width='600' height='400'></canvas> -->
-    <!-- <img class="lazyload" data-src="images/bobs burgers mockup2.png" src="images/image placeholder.jpg"
-                width="600px" height="800px" alt="Maven Consulting Portfolio Item"> -->
-    <!-- <div class='uk-position-center'>Item</div> -->
-    <!-- </div>
-          </li>
-          <li data-color='black dark' data-size='medium'>
-            <div class='uk-card uk-card-default uk-card-body'>
-              <img class="lazyload" data-src="images/bobs burgers mockup2.png" src="images/image placeholder.jpg"
-                width="600px" height="800px" alt="Maven Consulting Portfolio Item"> -->
-    <!-- <canvas width='600' height='600'></canvas>
-              <div class='uk-position-center'>Item</div> -->
-    <!-- </div>
-          </li>
-          <li data-color='black dark' data-size='small'>
-            <div class='uk-card uk-card-default uk-card-body'>
-              <img class="lazyload" data-src="images/bobs burgers mockup2.png" src="images/image placeholder.jpg"
-                width="600px" height="800px" alt="Maven Consulting Portfolio Item"> -->
-    <!-- <canvas width='600' height='400'></canvas>
-              <div class='uk-position-center'>Item</div> -->
-    <!-- </div>
-          </li>
-          <li data-color='blue dark' data-size='medium'>
-            <div class='uk-card uk-card-default uk-card-body'> -->
-    <!-- <canvas width='600' height='600'></canvas>
-              <div class='uk-position-center'>Item</div> -->
-    <!-- <img class="lazyload" data-src="images/bobs burgers mockup2.png" src="images/image placeholder.jpg"
-                width="600px" height="800px" alt="Maven Consulting Portfolio Item">
-            </div>
-          </li>
-          <li data-color='black dark' data-size='large'>
-            <div class='uk-card uk-card-default uk-card-body'> -->
-    <!-- <canvas width='600' height='800'></canvas>
-              <div class='uk-position-center'>Item</div> -->
-    <!-- <img class="lazyload" data-src="images/bobs burgers mockup2.png" src="images/image placeholder.jpg"
-                width="600px" height="800px" alt="Maven Consulting Portfolio Item">
-            </div>
-          </li>
-          <li data-color='blue dark' data-size='large'>
-            <div class='uk-card uk-card-default uk-card-body'> -->
-    <!-- <canvas width='600' height='800'></canvas>
-              <div class='uk-position-center'>Item</div> -->
-    <!-- <img class="lazyload" data-src="images/bobs burgers mockup2.png" src="images/image placeholder.jpg"
-                width="600px" height="800px" alt="Maven Consulting Portfolio Item">
-            </div>
-          </li>
-          <li data-color='white' data-size='large'>
-            <div class='uk-card uk-card-default uk-card-body'> -->
-    <!-- <canvas width='600' height='800'></canvas>
-              <div class='uk-position-center'>Item</div> -->
-    <!-- <img class="lazyload" data-src="images/bobs burgers mockup2.png" src="images/image placeholder.jpg"
-                width="600px" height="800px" alt="Maven Consulting Portfolio Item">
-            </div>
-          </li>
-          <li data-color='blue dark' data-size='medium'>
-            <div class='uk-card uk-card-default uk-card-body'> -->
-    <!-- <canvas width='600' height='600'></canvas>
-              <div class='uk-position-center'>Item</div> -->
-    <!-- <img class="lazyload" data-src="images/bobs burgers mockup2.png" src="images/image placeholder.jpg"
-                width="600px" height="800px" alt="Maven Consulting Portfolio Item">
-            </div>
-          </li>
-          <li data-color='black dark' data-size='small'>
-            <div class='uk-card uk-card-default uk-card-body'> -->
-    <!-- <canvas width='600' height='400'></canvas>
-              <div class='uk-position-center'>Item</div> -->
-    <!-- <img class="lazyload" data-src="images/bobs burgers mockup2.png" src="images/image placeholder.jpg"
-                width="600px" height="800px" alt="Maven Consulting Portfolio Item">
-            </div>
-          </li>
-        </ul>
-      </div> -->
-    <!-- <div class="portfolio-sample-section">
-            <div class="portfolio-sample-item">
-              <img class="portfolio-item-child" src="images/BabyBearPortfolio.jpg" alt="Maven Consulting Portfolio Item" />
-            </div>
-            <div class="portfolio-sample-item">
-              <img class="portfolio-item-child" src="images/JupiterPortfolio.jpg" alt="Maven Consulting Portfolio Item" />
-            </div>
+      </div>
+      <!-- <img
+        style="width: 100%;"
+        src="images/grunge border bottom alternative 100px.png"
+        alt="Grunge Border"
+      /> -->
+    </section>
+
+    <!-- Footer Section -->
+    <footer
+      style="margin-top: 0 !important;"
+      class="footer normal-footer-padding"
+      style="margin-top: 5rem;"
+    >
+      <!-- <img src="images/grunge-divider-top-white2.png" alt="Bargund Consulting Grunge Top" /> -->
+      <img
+        class="logo"
+        src="images/bargund logo sword 2.png"
+        alt="Bargund Consulting Logo"
+      />
+      <div class="footer-column-container">
+        <div class="footer-column">
+          <h2>Resources</h2>
+          <!-- <a href="contact.html">Blog</a> -->
+          <a href="about.html">The 8 Bargund Values</a>
+          <a href="maintenance-packages.html">Website Maintenance Packages</a>
+          <a href="services.html">Our Services</a>
+          <a href="portfolio.html">Our Work</a>
+          <a href="contact.html">Contact Us</a>
+          <!-- <a href="contact.html">Case Studies</a> -->
+        </div>
+
+        <div class="footer-column">
+          <h2>Legal</h2>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="cookie-policy.html">Cookie Policy</a>
+          <a href="opt-out.html">Opt Out</a>
+        </div>
+
+        <div class="footer-column">
+          <h2>Social</h2>
+          <div class="social-media-link-section">
+            <a href="https://fb.me/MavenConsultingLLC" class="social-media-icon"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.pinterest.com/BargundConsulting/"
+              class="social-media-icon"
+              ><i class="fab fa-pinterest-p"></i
+            ></a>
+            <a
+              href="https://www.twitter.com/damirmoor/"
+              class="social-media-icon"
+              ><i class="fab fa-twitter"></i
+            ></a>
           </div>
-          <div class="portfolio-sample-section">
-            <div class="portfolio-sample-item">
-              <img class="portfolio-item-child" src="images/PoseidonPortfolio.jpg" alt="Maven Consulting Portfolio Item" />
-            </div>
-            <div class="portfolio-sample-item">
-              <img class="portfolio-item-child" src="images/ImpizePortfolio.jpg" alt="Maven Consulting Portfolio Item" />
-            </div>
-          </div> -->
-    <!-- </div> -->
-  </section>
+        </div>
+      </div>
 
-  <!-- Testimonials Section -->
-  <section class="testimonial-section" style="background-color: #fff;">
-    <!-- <img src="images/grunge-divider-top-white2.png" alt="Maven Consulting Grunge Top" /> -->
-    <div class="testimonial">
-      <h2>What Our Clients Say</h2>
-      <p>
-        "Maven Consulting has gone above and beyond my expectations with easy communication and ingenuity. The work that
-        was provided is excellent. I will most definitely work with them again." —Gabriella, Director of Nordikuh
+      <p class="copywright privacy-footer-link">
+        &copy; Bargund Consulting, 2019
       </p>
-    </div>
-    <!-- <img src="images/grunge-divider-bottom-white4.png" alt="Maven Consulting Grunge Bottom" /> -->
-  </section>
+    </footer>
 
-  <!-- discovery session sticky message -->
-  <!-- add .make-sticky class to fix the message to the bottom of screen -->
-  <div class="discovery-sticky make-sticky-large">
-    <p>Get free 30 minute discovery session.</p>
-    <button class="discovery-sticky-button pulse-coral" uk-toggle="target: #discovery-modal">Schedule Discovery
-      Session</button>
-    <!-- <span class="sticky-discovery-close" uk-icon="icon: close" onclick="closeStickyDiscovery()"></span> -->
-  </div>
-
-  <!-- Discovery Session Modal -->
-  <div id="discovery-modal" uk-modal>
-    <form class="discovery-section-modal-form uk-modal-dialog uk-modal-body" method="POST"
-      action="https://formspree.io/mavenconsultingincorporated@gmail.com">
-      <div style="width: 9rem; height: 9rem; align-self: center;">
-        <img data-src="images/services-icon2.png" alt="Maven Consulting services page." width="100%" height="100%"
-          uk-img>
-      </div>
-      <h1 class="uk-modal-title discovery-align-center">Discovery Session</h1>
-      <p class="free-30min-session discovery-align-center">Get a free 30 minute discovery session.</p>
-      <div class="flex">
-        <div class="discovery-input-label-section">
-          <span class="discovery-input-label">Your Name</span>
-          <input class="discovery-input-name discovery-form-name" name="Name" type="text" />
-        </div>
-        <div class="discovery-input-label-section">
-          <span class="discovery-input-label">Your Business's Name</span>
-          <input class="discovery-input-name discovery-form-business-name" name="Business Name" type="text" />
-        </div>
-      </div>
-      <div class="discovery-input-section2">
-        <div class="discovery-input-label-section">
-          <span class="discovery-input-label">Your Email</span>
-          <input class="discovery-input discovery-form-email" name="Email" type="email" />
-        </div>
-        <div class="discovery-input-label-section">
-          <span class="discovery-input-label">What Brought You Here?</span>
-          <textarea class="discovery-textarea-input discovery-form-what-brought-you" name="What Brought You Here"
-            cols="30" rows="10"></textarea>
-        </div>
-        <div class="discovery-input-label-section">
-          <span class="discovery-input-label">What Are Your Top Priorities?</span>
-          <textarea class="discovery-textarea-input discovery-form-top-priorities" name="Top Priorities" cols="30"
-            rows="10"></textarea>
-        </div>
-      </div>
-      <p class="discovery-error discovery-hide-error">
-        Error! All fields must be completed.
-      </p>
-      <div class="discovery-session-button pulse-coral" onclick="submitDiscoveryForm()">
-        <p class="discovery-modal-button-text">Schedule <span class="discovery-form-button-discovery">Discovery</span>
-          Session</p>
-      </div>
-      <!-- <button class="discovery-session-button" onclick="submitDiscoveryForm()">Schedule Discovery Session</button> -->
-      <p class="discovery-align-center">Places are strictly limited so please provide as much detail as possible!</p>
-      <input class="discovery-real-button" type="submit" value="real discovery submit button">
-      <span class="uk-modal-close discovery-modal-close" uk-icon="icon: close"></span>
-    </form>
-  </div>
-
-
-  <!-- Footer Section -->
-  <footer class="footer normal-footer-padding" style="margin-top: 5rem;">
-    <!-- <img src="images/grunge-divider-top-white2.png" alt="Maven Consulting Grunge Top" /> -->
-    <img src="images/grunge border alternative 100px.png" alt="Grunge Border">
-    <div class="footer-column-container">
-      <div class="footer-column">
-        <h2>Resources</h2>
-        <!-- <a href="contact.html">Blog</a> -->
-        <a href="about.html">The 8 Maven Values</a>
-        <a href="maintenance-packages.html">Website Maintenance Packages</a>
-        <a href="services.html">Our Services</a>
-        <a href="portfolio.html">Our Work</a>
-        <a href="contact.html">Contact Us</a>
-        <!-- <a href="contact.html">Case Studies</a> -->
-      </div>
-
-      <div class="footer-column">
-        <h2>Legal</h2>
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="cookie-policy.html">Cookie Policy</a>
-        <a href="opt-out.html">Opt Out</a>
-      </div>
-
-      <div class="footer-column">
-        <h2>Social</h2>
-        <div class="social-media-link-section">
-          <a href="https://fb.me/MavenConsultingLLC" class="social-media-icon"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.pinterest.com/MavenConsultingLLC/" class="social-media-icon"><i
-              class="fab fa-pinterest"></i></a>
-          <a href="https://www.instagram.com/mavenconsultingllc/" class="social-media-icon"><i
-              class="fab fa-instagram"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <p class="copywright privacy-footer-link">&copy; Maven Consulting LLC, 2019</p>
-  </footer>
-
-  <!-- Mouseflow -->
-  <script type="text/javascript">
-    window._mfq = window._mfq || [];
-    (function () {
-      var mf = document.createElement("script");
-      mf.type = "text/javascript"; mf.async = true;
-      mf.src = "//cdn.mouseflow.com/projects/b68cf005-cb50-4228-9df5-f899635d9a44.js";
-      document.getElementsByTagName("head")[0].appendChild(mf);
-    })();
-  </script>
-</body>
-
+    <!-- Mouseflow -->
+    <script type="text/javascript">
+      window._mfq = window._mfq || [];
+      (function() {
+        var mf = document.createElement("script");
+        mf.type = "text/javascript";
+        mf.async = true;
+        mf.src =
+          "//cdn.mouseflow.com/projects/b68cf005-cb50-4228-9df5-f899635d9a44.js";
+        document.getElementsByTagName("head")[0].appendChild(mf);
+      })();
+    </script>
+  </body>
 </html>

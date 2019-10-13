@@ -1,354 +1,479 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web Design/Development, Logo Design, and Digital Marketing. The Eight Bargund Values: 1. Be Loyal, 2. Value Family, 3. Take Responsibility, 4. Communicate Better, 5. Be Transparent, 6. Empower Others, 7. Be a Leader, 8. Don't Settle. We believe that a company
+    and website are more than a completed checklist. That's why Bargund Consulting focuses on building an identity
+    and soul for your business."
+    />
 
-<head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <meta name="description" content="Web Design/Development, Logo Design, and Digital Marketing. The Eight Maven Values: 1. Be Loyal, 2. Value Family, 3. Take Responsibility, 4. Communicate Better, 5. Be Transparent, 6. Empower Others, 7. Be a Leader, 8. Don't Settle. We believe that a company
-    and website are more than a completed checklist. That's why Maven Consulting focuses on building an identity
-    and soul for your business.">
+    <title>About Us | Bargund Consulting</title>
 
-  <title>About Us - Maven Consulting</title>
+    <!-- css imports -->
+    <!-- <link rel="stylesheet" href="styles/slide.css"> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="styles/uikit.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="styles/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
 
-  <!-- css imports -->
-  <!-- <link rel="stylesheet" href="styles/slide.css"> -->
-  <link rel='stylesheet' type='text/css' media='screen' href='styles/uikit.css'>
-  <link rel='stylesheet' type='text/css' media='screen' href='styles/style.css'>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link rel="icon" type="image/png" href="images/Maven Consulting favicon.png">
+    <!-- js imports -->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/respond.js/respond.js"></script>
+    <script src="js/lazysizes.js" async=""></script>
+    <script src="js/main.js"></script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-140408295-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  <!-- js imports -->
-  <script src='js/uikit.min.js'></script>
-  <script src='js/uikit-icons.min.js'></script>
-  <script src="js/respond.js/respond.js"></script>
-  <script src="js/lazysizes.js" async=""></script>
-  <script src='js/main.js'></script>
+      gtag("config", "UA-140408295-1");
+    </script>
+  </head>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140408295-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+  <body>
+    <!-- Navbar Section -->
+    <header class="navbar-section">
+      <!-- <h1>Logo</h1>
+    <h1>Bargund Consulting</h1> -->
+      <div>
+        <a href="index.html">
+          <img
+            class="logo"
+            src="images/logo 3.png"
+            alt="Bargund Consulting Logo"
+          />
+        </a>
+      </div>
+      <nav class="navbar">
+        <a href="blog.html">Blog</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-    gtag('config', 'UA-140408295-1');
-  </script>
-</head>
+    <!-- If Javascript is Disabled -->
+    <noscript>
+      <div class="javascript-disabled">
+        <p>This website requires javascript to function properly.</p>
+      </div>
+    </noscript>
 
-<body>
-  <!-- Navbar Section -->
-  <header class="navbar-section">
-    <!-- <h1>Logo</h1>
-    <h1>Maven Consulting</h1> -->
-    <div>
-      <a href="index.html">
-        <img class="lazyload" data-src="images/Maven Consulting Logo distressed.png" src="images/image placeholder.jpg"
-          width="250px" height="250px" alt="Maven Consulting Logo" />
-      </a>
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu-button">
+      <i onclick="toggleMenu()" class="fa fa-bars hamburger-menu-button"></i>
     </div>
-    <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="about.html">About</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
 
-  <!-- If Javascript is Disabled -->
-  <noscript>
-    <div class="javascript-disabled">
-      <p>This website requires javascript to function properly.</p>
-    </div>
-  </noscript>
+    <div onclick="closeMenu()" class="slide-menu-overlay hide-overlay"></div>
 
+    <aside class="slide-menu-container close-menu">
+      <i onclick="closeMenu()" class="fa fa-times close-menu2"></i>
+      <!-- <div class="close-menu2"></div> -->
 
-  <!-- Hamburger Menu -->
-  <div class="hamburger-menu-button">
-    <i onclick="toggleMenu()" class="fa fa-bars hamburger-menu-button"></i>
-  </div>
+      <nav class="slide-menu">
+        <a href="blog.html">Blog</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </aside>
 
-  <div onclick="closeMenu()" class="slide-menu-overlay hide-overlay"></div>
+    <!-- About Us Main Section -->
+    <section class="about-us-section">
+      <div class="about-intro-section">
+        <!-- <img src="images/grunge-divider-top-white2.png" alt="Bargund Consulting Grunge Top" /> -->
+        <img
+          style="width: 100%;"
+          src="images/grunge border alternative 100px.png"
+          alt="Grunge Border"
+        />
+        <h1 class="norse-heading">About Us</h1>
+        <p>
+          <span style="font-weight: bold;"
+            >Do you need a web presence as a business?</span
+          >
+          One of the main reasons we are so passionate about the internet is
+          that is has made more millionaires and billionaires than almost any
+          other thing. It's competing with behemoths like real estate investing.
+          There's no doubt it has opened doors for people who have the grit and
+          merit to succeed. Average businesses have become great businesses by
+          using the power of the the internet. Small companies are competing
+          with mega corporations in a classic David in Galiath battle. Something
+          which is almost unheard of before the creation of the World Wide Web.
+          So, do you need a web presence as a business? No. But the companies
+          that neglect or forfeit a web presence are certainly leaving money on
+          the table.
+        </p>
+        <p>
+          We believe that a company and website are more than a completed
+          checklist. That's why Bargund Consulting places a high importance on
+          building an identity and soul for your business. Whether that be with
+          digital marketing or the creation of a website. As human beings, we
+          want to do business with companies that share our beliefs and values.
+          This is why Apple has a cult following. They embody a set of values
+          that certain people—both customers and employees—identify with. Steve
+          Jobs putting power in the hands of the individual. A couple of men
+          sitting in their garage revolting against well established
+          multi-million dollar corporations, and winning. Combine that with a
+          quality product and website, and you have a compelling business.
+        </p>
+        <p>
+          Now we're going to tell you something that other web developement
+          companies won't tell you—we are
+          <span style="font-weight: bold;">NOT</span> the best in the industry.
+          No matter what you do in life, there is someone, somewhere, that does
+          it better. But we can promise you that we strive to improve and become
+          better than we were yesterday. We do what we do because we enjoy it
+          and we love the challenge. And at the end of the day, everyone is just
+          competing with themselves.
+          <!-- Checkout our values below -->
+          <!-- arrows pointing down to the 'values' section -->
+          <!-- <span
+            style="font-weight: 900;
+          display: inline-block;
+          transform: rotate(90deg);"
+            >&#8611;</span
+          >
 
-  <aside class="slide-menu-container close-menu">
-    <i onclick="closeMenu()" class="fa fa-times close-menu2"></i>
-    <!-- <div class="close-menu2"></div> -->
+          <span
+            style="font-weight: 900;
+          display: inline-block;
+          transform: rotate(90deg);
+          margin-left: -10px;
+          margin-right: -10px;"
+            >&#8611;</span
+          >
 
-    <nav class="slide-menu">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="about.html">About</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </aside>
+          <span
+            style="font-weight: 900;
+          display: inline-block;
+          transform: rotate(90deg);"
+            >&#8611;</span
+          > -->
+        </p>
+        <div style="margin-top: 3rem;">
+          <h2 class="norse-heading">Our Founder</h2>
+          <div
+            style="display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          margin-top: 1rem;"
+          >
+            <div
+              style="display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
 
-  <!-- About Us Main Section -->
-  <section class="about-us-section">
-    <div class="about-intro-section">
-      <!-- <img src="images/grunge-divider-top-white2.png" alt="Maven Consulting Grunge Top" /> -->
-      <img style="width: 100%;" src="images/grunge border alternative 100px.png" alt="Grunge Border">
-      <h1>About Us</h1>
-      <p>
-        We’re all about meeting your needs, solving your problems, and growing your business. We believe that a company
-        and website are more than a completed checklist. That's why Maven Consulting focuses on building an identity
-        and soul for your business. As human beings, we want to do business with companies that share our beliefs and
-        values. This is why Apple has a cult following. They embody a set of values that certain people—both customers
-        and employees—identify with.
-        Combine that with a quality product and website, and you have a strong business. Like most companies, our values
-        reflect those of our founder—Damir Moore. See what we're all about below.
+            margin-bottom: 1rem;"
+            >
+              <img
+                src="images/damir.png"
+                alt="Damir Moore | Founder of Bargund Consulting"
+                style="width: 100px; height: 100px;"
+              />
+              <div
+                style="display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+              flex-direction: column;
+              -webkit-box-align: start;
+              -ms-flex-align: start;
+              align-items: flex-start;
+              -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+              text-align: start;
+              padding-top: 0.5rem;
+              margin-left: 1rem;"
+              >
+                <p style="font-size: 120%;">Damir Moore</p>
+                <p style="margin-top: -1.4rem; width: 18rem;">
+                  | Founder of Bargund Consulting
+                </p>
+              </div>
+            </div>
+            <p>
+              Entrepreneur and business owner living in Blue Springs, Missouri.
+              I'm passionate about, and take pride in, producing quality work.
+              This can be seen in the people I hire. They are upstanding and
+              trustworthy. More and more business owners in the modern age look
+              for the cheapest workers they can find in the global marketplace.
+              I think this is unfortunate and stand by my beliefs to never
+              engage in such a practice. I also strive to allow my workers to
+              work remotely from home. This is so they can spend as much time as
+              possible with their families, which I beleive is the most
+              important thing in life. A publishing agent once remarked that a
+              novel doesn't require a premise—an underlying mission or
+              truth—but that the most popular ones do. The same can be said
+              about what you do for a living. It doesn't have to have a mission
+              or truth that you believe in. But the best ones do.
+            </p>
+          </div>
+        </div>
+        <!-- <img src="images/grunge-divider-bottom-white4.png" alt="Bargund Consulting Grunge Bottom" /> -->
+        <img
+          style="width: 100%;"
+          src="images/grunge border bottom alternative 100px.png"
+          alt="Grunge Border"
+        />
+      </div>
+
+      <h1 class="about-heading norse-heading">The 8 Bargund Values</h1>
+      <div class="our-values-main-body">
+        <div class="our-values-group">
+          <div class="our-values-group-item">
+            <img
+              class="lazyload"
+              data-src="images/loyalty icon greek.png"
+              src="images/image placeholder.jpg"
+              width="128px"
+              height="128px"
+              alt="Bargund Consulting about page."
+            />
+            <h3 class="norse-heading" style="font-weight:600;">Be Loyal</h3>
+            <p>
+              It doesn't matter if you're the CEO or an intern. Lookout for your
+              team. Show loyalty to your tribe.
+            </p>
+          </div>
+          <div class="our-values-group-item">
+            <img
+              class="lazyload"
+              data-src="images/family icon greek.png"
+              src="images/image placeholder.jpg"
+              width="128px"
+              height="128px"
+              alt="Bargund Consulting about page."
+            />
+            <h3 class="norse-heading" style="font-weight:600;">Value Family</h3>
+            <p>
+              Family is the most important thing in the world. Don't put other
+              things above them.
+            </p>
+          </div>
+        </div>
+        <div class="our-values-group">
+          <div class="our-values-group-item">
+            <img
+              class="lazyload"
+              data-src="images/responsibility icon greek.png"
+              src="images/image placeholder.jpg"
+              width="128px"
+              height="128px"
+              alt="Bargund Consulting about page."
+            />
+            <h3 class="norse-heading">Take Responsibility</h3>
+            <p>
+              Do not attempt to blame others for a problem. Take responsibility
+              and work together to makes things right.
+            </p>
+          </div>
+
+          <div class="our-values-group-item">
+            <img
+              class="lazyload"
+              data-src="images/communicate icon greek.png"
+              src="images/image placeholder.jpg"
+              width="128px"
+              height="128px"
+              alt="Bargund Consulting about page."
+            />
+            <h3 class="norse-heading">Communicate Better</h3>
+            <p>
+              Good communication is essential to any organization. Clearly
+              communicate your vision to those around you.
+            </p>
+          </div>
+
+          <div class="our-values-group-item">
+            <img
+              class="lazyload"
+              data-src="images/transparency icon greek.png"
+              src="images/image placeholder.jpg"
+              width="128px"
+              height="128px"
+              alt="Bargund Consulting about page."
+            />
+            <h3 class="norse-heading">Be Transparent</h3>
+            <p>
+              Do not bend the truth, or leave out important details. Be upfront
+              with people.
+            </p>
+          </div>
+        </div>
+
+        <div class="our-values-group">
+          <div class="our-values-group-item">
+            <img
+              class="lazyload"
+              data-src="images/empower icon greek.png"
+              src="images/image placeholder.jpg"
+              width="128px"
+              height="128px"
+              alt="Bargund Consulting about page."
+            />
+            <h3 class="norse-heading">Empower Others</h3>
+            <p>
+              Lift others up around you, so we can achieve together, what none
+              of us can achieve alone.
+            </p>
+          </div>
+
+          <div class="our-values-group-item">
+            <img
+              class="lazyload"
+              data-src="images/leadership icon greek.png"
+              src="images/image placeholder.jpg"
+              width="128px"
+              height="128px"
+              alt="Bargund Consulting about page."
+            />
+            <h3 class="norse-heading">Be a Leader</h3>
+            <p>
+              Being a leader has nothing to do with your job title. Be
+              courageous and seize every opportunity to make positive change.
+            </p>
+          </div>
+
+          <div class="our-values-group-item">
+            <img
+              class="lazyload"
+              data-src="images/dont settle icon greek.png"
+              src="images/image placeholder.jpg"
+              width="128px"
+              height="128px"
+              alt="Bargund Consulting about page."
+            />
+            <h3 class="norse-heading">Don't Settle</h3>
+            <p>
+              The worst thing is to discover a life you truely want, only after
+              you've spent your entire life living one you didn't. Don't settle.
+            </p>
+          </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer normal-footer-padding">
+      <!-- <img src="images/grunge-divider-top-white2.png" alt="Bargund Consulting Grunge Top" /> -->
+      <img
+        style="width: 100%;"
+        src="images/grunge border alternative 100px.png"
+        alt="Grunge Border"
+      />
+      <img
+        class="logo"
+        src="images/bargund logo sword 2.png"
+        alt="Bargund Consulting Logo"
+      />
+      <div class="footer-column-container">
+        <div class="footer-column">
+          <h2>Resources</h2>
+          <!-- <a href="contact.html">Blog</a> -->
+          <a href="about.html">The 8 Bargund Values</a>
+          <a href="maintenance-packages.html">Website Maintenance Packages</a>
+          <a href="services.html">Our Services</a>
+          <a href="portfolio.html">Our Work</a>
+          <a href="contact.html">Contact Us</a>
+          <!-- <a href="contact.html">Case Studies</a> -->
+        </div>
+
+        <div class="footer-column">
+          <h2>Legal</h2>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="cookie-policy.html">Cookie Policy</a>
+          <a href="opt-out.html">Opt Out</a>
+        </div>
+
+        <div class="footer-column">
+          <h2>Social</h2>
+          <div class="social-media-link-section">
+            <a href="https://fb.me/MavenConsultingLLC" class="social-media-icon"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.pinterest.com/BargundConsulting/"
+              class="social-media-icon"
+              ><i class="fab fa-pinterest-p"></i
+            ></a>
+            <a
+              href="https://www.twitter.com/damirmoor/"
+              class="social-media-icon"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <p class="copywright privacy-footer-link">
+        &copy; Bargund Consulting, 2019
       </p>
-      <!-- <img src="images/grunge-divider-bottom-white4.png" alt="Maven Consulting Grunge Bottom" /> -->
-      <img style="width: 100%;" src="images/grunge border bottom alternative 100px.png" alt="Grunge Border">
-    </div>
+    </footer>
 
-    <h1 class="about-heading">The 8 Maven Values</h1>
-    <div class="our-values-main-body">
-      <div class="our-values-group">
-        <div class="our-values-group-item">
-          <img class="lazyload" data-src="images/loyalty icon2.png" src="images/image placeholder.jpg" width="128px"
-            height="128px" alt="Maven Consulting about page.">
-          <h3 style="font-weight:600;">Be Loyal</h3>
-          <p>
-            It doesn't matter if you're the CEO or an intern. Lookout for your team. Show loyalty to your tribe.
-          </p>
-        </div>
-        <div class="our-values-group-item">
-          <img class="lazyload" data-src="images/family icon2.png" src="images/image placeholder.jpg" width="128px"
-            height="128px" alt="Maven Consulting about page.">
-          <h3 style="font-weight:600;">Value Family</h3>
-          <p>
-            Family is the most important thing in the world. Don't put other things above them.
-          </p>
-        </div>
-      </div>
-      <div class="our-values-group">
-        <div class="our-values-group-item">
-          <img class="lazyload" data-src="images/responsibility icon3.png" src="images/image placeholder.jpg"
-            width="128px" height="128px" alt="Maven Consulting about page.">
-          <h3>Take Responsibility</h3>
-          <p>
-            Do not attempt to blame others for a problem. Take responsibility and work together to makes things right.
-          </p>
-        </div>
-
-        <div class="our-values-group-item">
-          <img class="lazyload" data-src="images/communicate icon2.png" src="images/image placeholder.jpg" width="128px"
-            height="128px" alt="Maven Consulting about page.">
-          <h3>Communicate Better</h3>
-          <p>
-            Good communication is essential to any organization. Clearly communicate your vision to those around you.
-          </p>
-        </div>
-
-        <div class="our-values-group-item">
-          <img class="lazyload" data-src="images/transparency icon2.png" src="images/image placeholder.jpg"
-            width="128px" height="128px" alt="Maven Consulting about page.">
-          <h3>Be Transparent</h3>
-          <p>
-            Do not bend the truth, or leave out important details. Be upfront with people.
-          </p>
-        </div>
-      </div>
-
-      <div class="our-values-group">
-        <div class="our-values-group-item">
-          <img class="lazyload" data-src="images/empower icon3.png" src="images/image placeholder.jpg" width="128px"
-            height="128px" alt="Maven Consulting about page.">
-          <h3>Empower Others</h3>
-          <p>
-            Lift others up around you, so we can achieve together, what none of us can achieve alone.
-          </p>
-        </div>
-
-        <div class="our-values-group-item">
-          <img class="lazyload" data-src="images/leadership icon5.png" src="images/image placeholder.jpg" width="128px"
-            height="128px" alt="Maven Consulting about page.">
-          <h3>Be a Leader</h3>
-          <p>
-            Being a leader has nothing to do with your job title. Be courageous and seize every opportunity to make
-            positive change.
-          </p>
-        </div>
-
-        <div class="our-values-group-item">
-          <img class="lazyload" data-src="images/dont settle icon2.png" src="images/image placeholder.jpg" width="128px"
-            height="128px" alt="Maven Consulting about page.">
-          <h3>Don't Settle</h3>
-          <p>
-            The worst thing is to discover a life you truely want, only after you've spent your entire life
-            living one you didn't. Don't settle.
-          </p>
-        </div>
-      </div>
-
-
-      <!-- <br><br>
-      A website is an online representation of your business. It connects you with your audience and builds your
-      client lists. We help you
-      communicate the benefits of your products and services, and unlock the untapped potential of your business.
-      Building a platform generates new leads, reflects your brand's values, and allows access across all devices. All
-      while looking great, and loading fast. -->
-    </div>
-
-    <!-- <h3>Why Choose Us?</h3>
-    <p>
-      We know you’ve been shopping around for developers. You already know you have a lot of other web development
-      companies competing for your business. So why choose us? Simple! Because when you choose Maven Consulting,
-      you’re
-      dealing
-      with experts who not only know about technology and design, we also know about marketing. We understand your
-      business. And we know exactly how to turn pixels on your screen into profits in your pocket.
-    </p>
-
-    <br>
-    <h3>We're Committed to Good Communication</h3>
-    <p>
-      We’re a team who values customer service above all else. You can be assured of always getting a response,
-      whether you call or email us.
-    </p>
-
-    <br>
-    <h3>You’ll Get Feature-rich User-friendly Designs</h3>
-    <p>
-      You’ve seen websites and applications that were beautiful, but awfully hard to navigate or use. And on the flip
-      side, you’ve no doubt seen user-friendly sites that looked like they were made in 1995. When you work with us,
-      you don’t have to pick one or the other. We’ll make sure your websites are both visually stunning and amazingly
-      intuitive.
-    </p>
-
-    <br>
-    <h3>No Hidden Fees</h3>
-    <p>
-      When we give you a quote, that’s what you’ll pay. You’ll never be surprised by hidden fees.
-    </p> -->
-  </section>
-
-  <!-- Testimonials Section -->
-  <section class="testimonial-section">
-    <!-- <img src="images/grunge-divider-top-white2.png" alt="Maven Consulting Grunge Top" /> -->
-    <img style="width: 100%;" src="images/grunge border alternative 100px.png" alt="Grunge Border">
-    <div class="testimonial">
-      <h2>What Our Clients Say</h2>
-      <p>
-        "Maven Consulting has gone above and beyond my expectations with easy communication and ingenuity. The work that
-        was provided is excellent. I will most definitely work with them again." —Gabriella, Director of Nordikuh
-      </p>
-    </div>
-    <!-- <img src="images/grunge-divider-bottom-white4.png" alt="Maven Consulting Grunge Bottom" /> -->
-    <img style="width: 100%;" src="images/grunge border bottom alternative 100px.png" alt="Grunge Border">
-  </section>
-
-  <!-- discovery session sticky message -->
-  <!-- add .make-sticky class to fix the message to the bottom of screen -->
-  <div class="discovery-sticky make-sticky-large">
-    <p>Get free 30 minute discovery session.</p>
-    <button class="discovery-sticky-button pulse-coral" uk-toggle="target: #discovery-modal">Schedule Discovery
-      Session</button>
-    <!-- <span class="sticky-discovery-close" uk-icon="icon: close" onclick="closeStickyDiscovery()"></span> -->
-  </div>
-
-  <!-- Discovery Session Modal -->
-  <div id="discovery-modal" uk-modal>
-    <form class="discovery-section-modal-form uk-modal-dialog uk-modal-body" method="POST"
-      action="https://formspree.io/mavenconsultingincorporated@gmail.com">
-      <div style="width: 9rem; height: 9rem; align-self: center;">
-        <img data-src="images/services-icon2.png" alt="Maven Consulting services page." width="100%" height="100%"
-          uk-img>
-      </div>
-      <h1 class="uk-modal-title discovery-align-center">Discovery Session</h1>
-      <p class="free-30min-session discovery-align-center">Get a free 30 minute discovery session.</p>
-      <div class="flex">
-        <div class="discovery-input-label-section">
-          <span class="discovery-input-label">Your Name</span>
-          <input class="discovery-input-name discovery-form-name" name="Name" type="text" />
-        </div>
-        <div class="discovery-input-label-section">
-          <span class="discovery-input-label">Your Business's Name</span>
-          <input class="discovery-input-name discovery-form-business-name" name="Business Name" type="text" />
-        </div>
-      </div>
-      <div class="discovery-input-section2">
-        <div class="discovery-input-label-section">
-          <span class="discovery-input-label">Your Email</span>
-          <input class="discovery-input discovery-form-email" name="Email" type="email" />
-        </div>
-        <div class="discovery-input-label-section">
-          <span class="discovery-input-label">What Brought You Here?</span>
-          <textarea class="discovery-textarea-input discovery-form-what-brought-you" name="What Brought You Here"
-            cols="30" rows="10"></textarea>
-        </div>
-        <div class="discovery-input-label-section">
-          <span class="discovery-input-label">What Are Your Top Priorities?</span>
-          <textarea class="discovery-textarea-input discovery-form-top-priorities" name="Top Priorities" cols="30"
-            rows="10"></textarea>
-        </div>
-      </div>
-      <p class="discovery-error discovery-hide-error">
-        Error! All fields must be completed.
-      </p>
-      <div class="discovery-session-button pulse-coral" onclick="submitDiscoveryForm()">
-        <p class="discovery-modal-button-text">Schedule <span class="discovery-form-button-discovery">Discovery</span>
-          Session</p>
-      </div>
-      <!-- <button class="discovery-session-button" onclick="submitDiscoveryForm()">Schedule Discovery Session</button> -->
-      <p class="discovery-align-center">Places are strictly limited so please provide as much detail as possible!</p>
-      <input class="discovery-real-button" type="submit" value="real discovery submit button">
-      <span class="uk-modal-close discovery-modal-close" uk-icon="icon: close"></span>
-    </form>
-  </div>
-
-  <!-- Footer Section -->
-  <footer class="footer normal-footer-padding">
-    <!-- <img src="images/grunge-divider-top-white2.png" alt="Maven Consulting Grunge Top" /> -->
-    <img style="width: 100%;" src="images/grunge border alternative 100px.png" alt="Grunge Border">
-    <div class="footer-column-container">
-      <div class="footer-column">
-        <h2>Resources</h2>
-        <!-- <a href="contact.html">Blog</a> -->
-        <a href="about.html">The 8 Maven Values</a>
-        <a href="maintenance-packages.html">Website Maintenance Packages</a>
-        <a href="services.html">Our Services</a>
-        <a href="portfolio.html">Our Work</a>
-        <a href="contact.html">Contact Us</a>
-        <!-- <a href="contact.html">Case Studies</a> -->
-      </div>
-
-      <div class="footer-column">
-        <h2>Legal</h2>
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="cookie-policy.html">Cookie Policy</a>
-        <a href="opt-out.html">Opt Out</a>
-      </div>
-
-      <div class="footer-column">
-        <h2>Social</h2>
-        <div class="social-media-link-section">
-          <a href="https://fb.me/MavenConsultingLLC" class="social-media-icon"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.pinterest.com/MavenConsultingLLC/" class="social-media-icon"><i
-              class="fab fa-pinterest"></i></a>
-          <a href="https://www.instagram.com/mavenconsultingllc/" class="social-media-icon"><i
-              class="fab fa-instagram"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <p class="copywright privacy-footer-link">&copy; Maven Consulting LLC, 2019</p>
-  </footer>
-
-  <!-- Mouseflow -->
-  <script type="text/javascript">
-    window._mfq = window._mfq || [];
-    (function () {
-      var mf = document.createElement("script");
-      mf.type = "text/javascript"; mf.async = true;
-      mf.src = "//cdn.mouseflow.com/projects/b68cf005-cb50-4228-9df5-f899635d9a44.js";
-      document.getElementsByTagName("head")[0].appendChild(mf);
-    })();
-  </script>
-</body>
-
+    <!-- Mouseflow -->
+    <script type="text/javascript">
+      window._mfq = window._mfq || [];
+      (function() {
+        var mf = document.createElement("script");
+        mf.type = "text/javascript";
+        mf.async = true;
+        mf.src =
+          "//cdn.mouseflow.com/projects/b68cf005-cb50-4228-9df5-f899635d9a44.js";
+        document.getElementsByTagName("head")[0].appendChild(mf);
+      })();
+    </script>
+  </body>
 </html>

@@ -614,6 +614,8 @@ select {
         border-radius: 50%;
         height: 3rem;
         width: 3rem; }
+        .footer2 .social-media-link-section .social-media-icon i:hover {
+          border: solid 1px #32bdb6; }
   .footer2 .footer-column-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -715,8 +717,6 @@ select {
     padding-left: 1rem;
     padding-right: 1rem;
     width: 85%; }
-    .testimonial-section .testimonial h2 {
-      margin-bottom: 1rem; }
 
 .pulse-coral {
   -webkit-animation: pulse-coral 2s linear infinite;
@@ -782,8 +782,7 @@ select {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   background-color: rgba(100, 100, 100, 0.1);
-  text-align: center;
-  margin-top: 3rem; }
+  text-align: center; }
   .portfolio-main-section img {
     width: 100%; }
     .portfolio-main-section img:first-of-type {
@@ -1331,8 +1330,7 @@ select {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
-  margin-top: 3rem; }
+  flex-wrap: wrap; }
   .contact-us-section .contact-us-intro-text {
     width: 70%;
     text-align: center; }
@@ -1344,8 +1342,7 @@ select {
     flex-wrap: wrap;
     background-color: rgba(100, 100, 100, 0.1);
     width: 100%;
-    border-radius: 3px;
-    margin-top: 2rem; }
+    border-radius: 3px; }
     .contact-us-section .contact-us-body .contact-form-error {
       background-color: #CE5667;
       color: #fff;
@@ -1385,9 +1382,10 @@ select {
         background-color: #32bdb6;
         color: #fff;
         border: none;
-        border-radius: 30px;
         font-size: 110%;
-        cursor: pointer; }
+        cursor: pointer;
+        font-weight: 500;
+        text-transform: uppercase; }
         .contact-us-section .contact-us-body form .contact-us-button:hover {
           opacity: 0.9; }
       .contact-us-section .contact-us-body form .contact-us-real-button {
@@ -1829,6 +1827,15 @@ select {
 .norse-heading {
   font-family: "Norse Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
+.margin-center {
+  margin-left: calc(5% + 60px);
+  margin-right: calc(5% + 60px);
+  background-color: coral; }
+
+@media all and (max-width: 750px) and (min-width: 400px) {
+  .margin-center {
+    margin-left: calc(3 * 1rem);
+    margin-right: calc(3 * 1rem); } }
 @media all and (max-width: 3000px) and (min-width: 1500px) {
   .portfolio-sample-section-wrapper .portfolio-gif-section-wrapper {
     background-color: #fff; }
