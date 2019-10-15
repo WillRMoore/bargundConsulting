@@ -1777,8 +1777,7 @@ select {
       width: 100%;
       font-size: 120%;
       text-align: center;
-      color: #666666;
-      font-family: Westcraft, sans-serif, Arial, "Helvetica Neue", Helvetica; }
+      color: #666666; }
       .slide-menu-container .slide-menu a:last-of-type {
         border-bottom: none; }
       .slide-menu-container .slide-menu a:hover {
@@ -1855,6 +1854,12 @@ select {
 @media all and (max-width: 1060px) and (min-width: 950px) {
   .discovery-section-wrapper .discovery-section {
     width: 90%; } }
+@media all and (max-width: 1035px) {
+  .hamburger-menu-button {
+    display: block; }
+
+  .navbar-section .navbar {
+    display: none; } }
 @media all and (max-width: 950px) and (min-width: 750px) {
   .discovery-section-wrapper .discovery-section {
     width: 95%; }
@@ -2003,12 +2008,6 @@ select {
 
   .portfolio-sample-section-wrapper .portfolio-gif-section-wrapper .portfolio-sample-section {
     width: 100%; }
-
-  .hamburger-menu-button {
-    display: block; }
-
-  .navbar-section .navbar {
-    display: none; }
 
   .services-section {
     padding-left: 1rem;
