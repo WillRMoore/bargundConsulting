@@ -111,6 +111,18 @@ select {
   height: 2.5em;
 }
 
+ul, ol {
+  line-height: 1.6rem;
+
+  li {
+    margin-bottom: 0.2rem;
+  }
+}
+
+ul {
+  list-style-type: disc;
+}
+
 
 
 // Javascript Disabled

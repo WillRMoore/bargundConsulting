@@ -438,6 +438,14 @@ select {
   padding-left: 0.3em;
   height: 2.5em; }
 
+ul, ol {
+  line-height: 1.6rem; }
+  ul li, ol li {
+    margin-bottom: 0.2rem; }
+
+ul {
+  list-style-type: disc; }
+
 .javascript-disabled {
   position: fixed;
   top: 0;
