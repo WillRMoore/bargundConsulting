@@ -266,6 +266,23 @@
       </p>
     </footer>
 
+    <!-- Mailchimp Pop-up Subscribe form -->
+    <script
+      type="text/javascript"
+      src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
+      data-dojo-config="usePlainJson: true, isDebug: false"
+    ></script
+    ><script type="text/javascript">
+      window.dojoRequire(["mojo/signup-forms/Loader"], function(L) {
+        L.start({
+          baseUrl: "mc.us20.list-manage.com",
+          uuid: "ec335d25dd1235cdb9baddb4d",
+          lid: "4fc5484742",
+          uniqueMethods: true
+        });
+      });
+    </script>
+
     <!-- Mouseflow -->
   </body>
 </html>
